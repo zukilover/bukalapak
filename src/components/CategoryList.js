@@ -30,14 +30,14 @@ class CategoryList extends React.Component{
           {
             this.props.categoryLevel > 1 ?
               (
-                <a onClick={this.handleOnClick.bind(this)} className="pull-right">
+                <a onClick={this.handleOnClick.bind(this)} className="btn pull-right">
                   <span className="sr-only">Back to {this.props.referrer.name}</span>
                   <i className="icon icon-close"></i>
                 </a>
               ) : null
           }
         </div>
-        <ul className="category-list category-level-1">
+        <ul className={'category-list category-level-' + this.props.categoryLevel.toString()}>
           {allData}
         </ul>
       </div>
