@@ -1,0 +1,1 @@
+export const LOAD_LISTS_SUCCESS = 'LOAD_LISTS_SUCCESS';
