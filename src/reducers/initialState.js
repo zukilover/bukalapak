@@ -1,3 +1,12 @@
 export default {
-  lists: []
+  lists: [],
+  active: {
+    path: '',
+    name: ''
+  },
+  referrer: {
+    path: '',
+    name: ''
+  },
+  categoryLevel: 0
 }

@@ -1,10 +1,16 @@
 import { combineReducers } from 'redux';
 import {
-  listReducer as lists
+  listReducer as lists,
+  referrerReducer as referrer,
+  setCategoryLevelReducer as categoryLevel,
+  setActiveReducer as active
 } from './listReducer';
 
 const rootReducer = combineReducers({
-  lists
+  lists,
+  referrer,
+  categoryLevel,
+  active
 });
 
 export default rootReducer;

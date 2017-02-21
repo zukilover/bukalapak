@@ -1,3 +1,21 @@
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after{
+  content: '';
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
 .site-head{
   background: #d71149;
   padding: 10px;
@@ -30,6 +48,10 @@
 
 .icon-refresh{
   background-position: 50% 0;
+}
+
+.icon-close{
+  background-position: 50% -24px;
 }
 
 .icon-expand{
