@@ -5,7 +5,7 @@ import { loadList } from '../actions/listActions';
 
 class CategoryPage extends React.Component {
   loadList(){
-    this.props.dispatch(loadList())
+    this.props.dispatch(loadList('main.json'))
   }
 
   render() {

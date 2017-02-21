@@ -2,9 +2,9 @@ import 'whatwg-fetch';
 import config from 'config';
 
 class ListApi {
-  static getAllLists() {
+  static getAllLists(path) {
     return fetch(
-      config.API_PATH.list + 'main.json',
+      config.API_PATH.list + path,
       {
         headers: {
           'Origin': 'localhost',

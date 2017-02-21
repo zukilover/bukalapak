@@ -1,9 +1,9 @@
 import listApi from '../api/listApi';
 import * as types from './actionTypes';
 
-export function loadList() {
+export function loadList(path) {
   return function(dispatch) {
-    return listApi.getAllLists().then(response => {
+    return listApi.getAllLists(path).then(response => {
       dispatch(loadListSuccess(response));
     }).catch(error => {
       throw(error);

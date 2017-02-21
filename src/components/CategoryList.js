@@ -1,11 +1,10 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { loadList } from '../actions/listActions';
 import CategoryListItem from './CategoryListItem';
 
 class CategoryList extends React.Component{
   componentDidMount(){
-    this.props.dispatch(loadList());
+    this.props.loadList();
   }
 
   render() {
