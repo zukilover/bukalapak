@@ -8,10 +8,11 @@ class ListApi {
       {
         headers: {
           'Origin': 'localhost',
-          'X-Requested-With': 'XMLHttpRequest'
+          'X-Requested-With': 'XMLHttpRequest',
+          'Content-Type': 'application/json'
         }
       }).then(response => {
-      return response;
+      return response.json();
     }).catch(error => {
       return error;
     });
